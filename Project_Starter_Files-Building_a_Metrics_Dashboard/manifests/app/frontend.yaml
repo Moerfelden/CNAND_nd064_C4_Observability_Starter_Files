@@ -14,19 +14,47 @@ spec:
     spec:
       containers:
       - name: frontend
-        # We advise you to build, push and use your own image, instead of using instructor's image.
-        image: ghcr.io/jasonsmithio/myfrontend:v1
+        image: yoram460/frontend:latest
+        imagePullPolicy: Always
         ports:
-        - containerPort: 8080
+        - name: frontendport
+          containerPort: 8080
+          protocol: TCP
+        restartPolicy: Always
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: frontend-service
+  labels:
+    app: frontend
 spec:
   selector:
     app: frontend
   ports:
-    - port: 8080
-      targetPort: 8080
+    - name: frontend
+      protocol: TCP
+      port: 8080
+      targetPort: frontendport
+      nodePort: 30001
   type: LoadBalancer
+---
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: frontend-monitor
+  namespace: monitoring
+  labels:
+    app: frontend
+    release: prometheus
+spec:
+  selector:
+    matchLabels:
+      app: frontend
+  endpoints:
+  - port: frontend
+    path: /metrics
+    interval: 15s
+  namespaceSelector:
+    matchNames:
+    - default
