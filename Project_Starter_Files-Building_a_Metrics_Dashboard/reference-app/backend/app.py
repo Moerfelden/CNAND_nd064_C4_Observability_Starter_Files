@@ -15,11 +15,9 @@ metrics.info("app_info", "Application info", version="1.0.3")
 by_endpoint_counter = metrics.counter('by_endpoint_counter', 'Request count by endpoints', labels={'endpoint': lambda: request.endpoint})
 by_path_counter = metrics.counter('by_path_counter', 'Request count by request paths', labels={'path': lambda: request.path})
 
-
 app.config["MONGO_DBNAME"] = "example-mongodb"
 app.config["MONGO_URI"] = "mongodb://example-mongodb-svc.default.svc.cluster.local:27017/example-mongodb"
 mongo = PyMongo(app)
-
 
 # initialize tracing 
 def init_jaeger_tracer(service_name = 'backend-service'):
