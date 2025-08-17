@@ -45,7 +45,8 @@ tracing = FlaskTracing(tracer, True, app)
 def homepage():
     app.logger.info('Accessing the backend homepage')
     with tracer.start_span('homepage-span') as span:
-        span.set_tag('http.method', request.method)
+        span.set_tag('request http.method', request.method)
+        span.set_tag('response message', 'Hello World')
         return "Hello World"
 
 @app.route('/api')
@@ -54,7 +55,8 @@ def homepage():
 def my_api():
     app.logger.info('Accessing backend endpoint /api')
     with tracer.start_span('my_api_span') as span:
-        span.set_tag('http.method', request.method)
+        span.set_tag('request http.method', request.method)
+        span.set_tag('response message', 'something')
         answer = "something"
         return jsonify(reponse=answer)
 
@@ -64,7 +66,8 @@ def my_api():
 def add_star():
     app.logger.info('Accessing backend endpoint /star')
     with tracer.start_span('star_span') as span:
-        span.set_tag('http.method', request.method)    
+        span.set_tag('request http.method', request.method)  
+        span.set_tag('tag', 'star')
         try:
             star = mongo.db.stars
             name = request.json['name']
