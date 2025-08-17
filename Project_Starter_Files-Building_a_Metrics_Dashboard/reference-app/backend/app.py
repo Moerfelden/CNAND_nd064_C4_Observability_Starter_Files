@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_opentracing import FlaskTracing
 from flask_pymongo import PyMongo
 from jaeger_client import Config
 from prometheus_flask_exporter import PrometheusMetrics
@@ -26,10 +27,17 @@ def init_jaeger_tracer(service_name = 'backend-service'):
     logging.getLogger('').handlers = []
     logging.basicConfig(format = '%(message)s', level = logging.DEBUG)
     
-    config = Config(config = {'logging':True}, service_name = service_name, validate = True)
+    config = Config(
+        config={
+            'sampler': {'type': 'const', 'param': 1},
+            'logging': True,
+            'reporter_batch_size': 1}, 
+        service_name=service_name,
+        validate = True)
     return config.initialize_tracer()
 
 tracer = init_jaeger_tracer('backend-service')
+tracing = FlaskTracing(tracer, True, app)
 
 @app.route('/')
 @by_endpoint_counter
