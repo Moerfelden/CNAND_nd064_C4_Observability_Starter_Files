@@ -44,7 +44,7 @@ tracing = FlaskTracing(tracer, True, app)
 @by_path_counter
 def homepage():
     app.logger.info('Accessing the backend homepage')
-    with tracer.start_span('homepage-span') as span:
+    with tracer.start_span('backend_homepage_span') as span:
         span.set_tag('request http.method', request.method)
         span.set_tag('response message', 'Hello World')
         return "Hello World"
@@ -54,7 +54,7 @@ def homepage():
 @by_path_counter
 def my_api():
     app.logger.info('Accessing backend endpoint /api')
-    with tracer.start_span('my_api_span') as span:
+    with tracer.start_span('backend_my_api_span') as span:
         span.set_tag('request http.method', request.method)
         span.set_tag('response message', 'something')
         answer = "something"
@@ -65,7 +65,7 @@ def my_api():
 @by_path_counter
 def add_star():
     app.logger.info('Accessing backend endpoint /star')
-    with tracer.start_span('star_span') as span:
+    with tracer.start_span('backend_star_span') as span:
         span.set_tag('request http.method', request.method)  
         span.set_tag('tag', 'star')
         try:
