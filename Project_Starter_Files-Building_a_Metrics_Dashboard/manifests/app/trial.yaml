@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: trial
-        image: yoram460/trial:latest
+        image: yoram460/dashboard-trial:latest
         imagePullPolicy: Always
         ports:
         - name: trialport
