@@ -22,7 +22,7 @@ spec:
         - name: frontendport
           containerPort: 8080
           protocol: TCP
-    restartPolicy: Always
+      restartPolicy: Always
 ---
 apiVersion: v1
 kind: Service
