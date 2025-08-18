@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: yoram460/frontend:latest
+        image: yoram460/dashboard-frontend:latest
         imagePullPolicy: Always
         ports:
         - name: frontendport
