@@ -41,8 +41,7 @@ def homepage():
     with tracer.start_span('frontend_homepage_span') as span:
         span.set_tag('tag', 'frontend homepage')
         try:
-            result = Flask.ensure_sync(render_template("main.html"))()  # Wrap the async function with Flask.ensure_sync().
-            return result
+            return render_template("main.html")
         except Exception as e:
             print(f"Error occurred: {e}")
 
