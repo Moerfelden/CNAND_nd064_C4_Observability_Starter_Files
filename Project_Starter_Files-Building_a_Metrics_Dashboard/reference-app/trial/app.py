@@ -48,6 +48,7 @@ flask_tracer = FlaskTracing(tracer, True, app)
 
 @app.route("/")
 def homepage():
+    logger.info('Accessing the trial homepage')
     return render_template("main.html")
 
 
