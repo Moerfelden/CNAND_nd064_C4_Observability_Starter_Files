@@ -60,8 +60,8 @@ def trace():
         return tag.sub("", text)
 
     with tracer.start_span("get-python-jobs") as span:
-        // Unfortunately, the given URL is unreachable.
-        // res = requests.get("https://jobs.github.com/positions.json?description=python")
+        # Unfortunately, the given URL is unreachable.
+        # res = requests.get("https://jobs.github.com/positions.json?description=python")
         sample_jobs = json.loads("""[
         {
             "description": "Join our innovative team as a Data Scientist to analyze and interpret complex data.",
