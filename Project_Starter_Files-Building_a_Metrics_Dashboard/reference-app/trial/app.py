@@ -1,3 +1,4 @@
+import json
 import logging
 import re
 import requests
@@ -59,12 +60,47 @@ def trace():
         return tag.sub("", text)
 
     with tracer.start_span("get-python-jobs") as span:
-        res = requests.get("https://jobs.github.com/positions.json?description=python")
-        span.log_kv({"event": "get jobs count", "count": len(res.json())})
-        span.set_tag("jobs-count", len(res.json()))
+        // res = requests.get("https://jobs.github.com/positions.json?description=python")
+        sample_jobs = json.loads("""[
+        {
+            "description": "Join our innovative team as a Data Scientist to analyze and interpret complex data.",
+            "company": "Data Insights LLC",
+            "company_url": "https://datainsights.example.com",
+            "created_at": "2025-09-15T09:30:00Z",
+            "how_to_apply": "Please apply through our website or send your resume to careers@datainsights.example.com",
+            "location": "San Francisco, CA",
+            "title": "Data Scientist",
+            "type": "Full Time",
+            "url": "https://datainsights.example.com/jobs/data-scientist"
+        },
+        {
+            "description": "We are seeking a Frontend Developer with a passion for creating engaging user interfaces.",
+            "company": "Creative Web Solutions",
+            "company_url": "https://creativewebsolutions.example.com",
+            "created_at": "2025-09-20T14:45:00Z",
+            "how_to_apply": "Send your portfolio and resume to hr@creativewebsolutions.example.com",
+            "location": "Austin, TX",
+            "title": "Frontend Developer",
+            "type": "Contract",
+            "url": "https://creativewebsolutions.example.com/jobs/frontend-developer"
+        },   
+        {
+            "description": "Looking for a Python Developer to join our team.",
+            "company": "Apps Unlimited LLC",
+            "company_url": "https://appsunlimited.example.com",
+            "created_at": "2025-09-01T10:00:00Z",
+            "how_to_apply": "Send your resume to jobs@appsunlimited.example.com",
+            "location": "New York, NY",
+            "title": "Python Developer",
+            "type": "Full Time",
+            "url": "https://appsunlimited.example.com/jobs/python-developer"
+        }
+        ]""")
+        span.log_kv({"event": "get jobs count", "count": len(sample_jobs)})
+        span.set_tag("jobs-count", len(sample_jobs))
 
         jobs_info = []
-        for result in res.json():
+        for result in sample_jobs:
             jobs = {}
             with tracer.start_span("request-site") as site_span:
                 logger.info(f"Getting website for {result['company']}")
