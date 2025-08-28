@@ -97,6 +97,7 @@ def trace():
             "url": "https://appsunlimited.example.com/jobs/python-developer"
         }
         ]""")
+        
         span.log_kv({"event": "get jobs count", "count": len(sample_jobs)})
         span.set_tag("jobs-count", len(sample_jobs))
 
