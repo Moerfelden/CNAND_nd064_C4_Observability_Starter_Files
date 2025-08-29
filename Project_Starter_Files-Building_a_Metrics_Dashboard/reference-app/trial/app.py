@@ -60,8 +60,9 @@ def trace():
         return tag.sub("", text)
 
     with tracer.start_span("get-python-jobs") as span:
-        # Unfortunately, the given endpoint is unreachable.
+        # Unfortunately, the given endpoint is unreachable. The to the new endpoint to avoid res.status_code being undefined.
         # res = requests.get("https://jobs.github.com/positions.json?description=python")
+        res = requests.get("https://www.github.careers/careers-home/jobs?description=python")
         sample_jobs = json.loads("""[
         {
             "description": "Join our innovative team as a Data Scientist to analyze and interpret complex data.",
