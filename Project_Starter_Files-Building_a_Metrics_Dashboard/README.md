@@ -9,8 +9,8 @@
 
 ## Create a Basic Dashboard
 *TODO:* Create a dashboard in Grafana that shows Prometheus as a source. Take a screenshot and include it here.  
-The dashboard is stored in the 'dashboards' directory: Basic Dashboard.json
-<img src="./answer-img/Basic Dashboard.png"/>
+<img src="./answer-img/Basic Dashboard.png"/>  
+The above dashboard is stored in the 'dashboards' directory: Basic Dashboard.json
 
 ## Describe SLO/SLI
 *TODO:* Describe, in your own words, what the SLIs are, based on an SLO of *monthly uptime* and *request response time*.
@@ -20,11 +20,11 @@ The dashboard is stored in the 'dashboards' directory: Basic Dashboard.json
 
 ## Create a Dashboard to measure our SLIs
 *TODO:* Create a dashboard to measure the uptime of the frontend and backend services We will also want to measure to measure 40x and 50x errors. Create a dashboard that shows these values over a 24 hour period and take a screenshot.  
-The dashboard is stored in the 'dashboards' directory: Prometheus Dashboard.json
 <img src="./answer-img/Uptime Frontend.png"/>
 <img src="./answer-img/Uptime Backend.png"/>
 <img src="./answer-img/40x Errors.png"/>
-<img src="./answer-img/50x Errors.png"/>
+<img src="./answer-img/50x Errors.png"/>  
+The above dashboard is stored in the 'dashboards' directory: Prometheus Dashboard.json
 
 ## Tracing our Flask App
 *TODO:*  We will create a Jaeger span to measure the processes on the backend. Once you fill in the span, provide a screenshot of it here. Also provide a (screenshot) sample Python file containing a trace and span code used to perform Jaeger traces on the backend service.
