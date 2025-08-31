@@ -50,7 +50,7 @@ The above dashboard is stored in the `dashboards` directory: Prometheus Dashboar
 
 TROUBLE TICKET
 
-Name:
+Name: Error in trial app: Get python jobs
 
 Date:
 
@@ -58,7 +58,7 @@ Subject:
 
 Affected Area:
 
-Severity:
+Severity: High
 
 Description:
 <img src="./answer-img/Jaeger Trial Service_Get Python Jobs.png"/>  
