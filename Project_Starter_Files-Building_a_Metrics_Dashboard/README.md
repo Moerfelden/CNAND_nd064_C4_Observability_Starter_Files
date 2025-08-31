@@ -50,11 +50,11 @@ The above dashboard is stored in the `dashboards` directory: Prometheus Dashboar
 
 TROUBLE TICKET
 
-Name: Trial App Error
+Name: Trial App Issue
 
 Date: 26.08.2025
 
-Subject: Operation get-python-jobs fails. The provided jobs endpoint is unreachable.
+Subject: Operation get-python-jobs fails. The provided jobs endpoint is unreachable: Connection refused.
 
 Affected Area: Python script `reference-app/trial/app.py`.
 
