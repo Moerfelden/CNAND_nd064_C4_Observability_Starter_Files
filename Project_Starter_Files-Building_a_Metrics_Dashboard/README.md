@@ -9,6 +9,7 @@
 
 ## Create a Basic Dashboard
 *TODO:* Create a dashboard in Grafana that shows Prometheus as a source. Take a screenshot and include it here.
+The dashboard is stored in the 'dashboards' directory: Basic Dashboard.json
 <img src="./answer-img/Basic Dashboard.png"/>
 
 ## Describe SLO/SLI
@@ -19,6 +20,7 @@
 
 ## Create a Dashboard to measure our SLIs
 *TODO:* Create a dashboard to measure the uptime of the frontend and backend services We will also want to measure to measure 40x and 50x errors. Create a dashboard that shows these values over a 24 hour period and take a screenshot.
+The dashboard is stored in the 'dashboards' directory: Prometheus Dashboard.json
 <img src="./answer-img/Uptime Frontend.png"/>
 <img src="./answer-img/Uptime Backend.png"/>
 <img src="./answer-img/40x Errors.png"/>
