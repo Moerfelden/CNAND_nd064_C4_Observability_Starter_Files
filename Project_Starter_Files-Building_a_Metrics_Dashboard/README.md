@@ -61,7 +61,8 @@ Affected Area:
 Severity:
 
 Description:
-
+<img src="./answer-img/Jaeger Trial Service_Get Python Jobs.png"/>  
+<img src="./answer-img/Jaeger Trace_Connection Refused.png"/>  
 
 ## Creating SLIs and SLOs
 *TODO:* We want to create an SLO guaranteeing that our application has a 99.95% uptime per month. Name four SLIs that you would use to measure the success of this SLO.
