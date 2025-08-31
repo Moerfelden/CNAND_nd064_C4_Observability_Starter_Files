@@ -9,7 +9,7 @@
 
 ## Create a Basic Dashboard
 *TODO:* Create a dashboard in Grafana that shows Prometheus as a source. Take a screenshot and include it here.  
-<img src="./answer-img/Basic Dashboard.png"/>  
+<img src="./answer-img/Successful Requests per Minute.png"/>  
 The above dashboard is stored in the `dashboards` directory: Basic Dashboard.json
 
 ## Describe SLO/SLI
