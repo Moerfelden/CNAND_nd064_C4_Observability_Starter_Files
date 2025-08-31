@@ -46,21 +46,21 @@ The above dashboard is stored in the `dashboards` directory: Prometheus Dashboar
 *TODO:* Now that the trace is running, let's add the metric to our current Grafana dashboard. Once this is completed, provide a screenshot of it here.
 
 ## Report Error
-*TODO:* Using the template below, write a trouble ticket for the developers, to explain the errors that you are seeing (400, 500, latency) and to let them know the file that is causing the issue also include a screenshot of the tracer span to demonstrate how we can user a tracer to locate errors easily.
+*TODO:* Using the template below, write a trouble ticket for the developers, to explain the errors that you are seeing (400, 500, latency) and to let them know the file that is causing the issue also include a screenshot of the tracer span to demonstrate how we can use a tracer to locate errors easily.
 
 TROUBLE TICKET
 
-Name: Error in trial app: Get python jobs
+Name: Trial App Error
 
-Date:
+Date: 26.08.2025
 
-Subject:
+Subject: Operation get-python-jobs fails. The provided jobs endpoint is unreachable.
 
-Affected Area:
+Affected Area: Python script `reference-app/trial/app.py`.
 
 Severity: High
 
-Description:
+Description: As shown by the tracer span in the screenshot below, the trial application failed to establish a connection to url 'https://jobs.github.com/positions.json?description=python'.
 <img src="./answer-img/Jaeger Trial Service_Get Python Jobs.png"/>  
 <img src="./answer-img/Jaeger Trace_Connection Refused.png"/>  
 
