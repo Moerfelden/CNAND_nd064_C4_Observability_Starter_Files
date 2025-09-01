@@ -52,15 +52,15 @@ TROUBLE TICKET
 
 Name: Trial App Issue
 
-Date: 26.08.2025
+Date: August 26 2025, 09:04:48
 
-Subject: Operation get-python-jobs fails. The provided jobs endpoint is unreachable: Connection refused.
+Subject: Operation get-python-jobs fails. The provided jobs endpoint is unreachable.
 
 Affected Area: Python script `reference-app/trial/app.py`.
 
 Severity: High
 
-Description: As shown by the tracer span in the screenshot below, the trial application failed to establish a connection to url 'https://jobs.github.com/positions.json?description=python'.
+Description: Connection refused error. As shown by the tracer span in the screenshot below, the trial application failed to establish a connection to url 'https://jobs.github.com/positions.json?description=python'.
 <img src="./answer-img/Jaeger Trial Service_Get Python Jobs.png"/>  
 <img src="./answer-img/Jaeger Trace_Connection Refused.png"/>  
 
