@@ -37,7 +37,7 @@ Request Response Time: This SLI measures the time taken to respond to a user req
 *TODO:* It is important to know why we want to measure certain metrics for our customer. Describe in detail 5 metrics to measure these SLIs. 
 
 ## Create a Dashboard to measure our SLIs
-*TODO:* Create a dashboard to measure the uptime of the frontend and backend services We will also want to measure to measure 40x and 50x errors. Create a dashboard that shows these values over a 24 hour period and take a screenshot.  
+*TODO:* Create a dashboard to measure the uptime of the frontend and backend services We will also want to measure 40x and 50x errors. Create a dashboard that shows these values over a 24 hour period and take a screenshot.  
 <img src="./answer-img/Uptime Frontend.png"/>
 <img src="./answer-img/Uptime Backend.png"/>
 <img src="./answer-img/40x Errors.png"/>
