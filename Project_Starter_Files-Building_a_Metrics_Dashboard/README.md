@@ -49,8 +49,7 @@ This metric measures the response time below which 95% of the requests fall. It 
 This metric measures the percentage of requests that result in errors (e.g., HTTP 4xx and 5xx status codes) over a specified period. A low error rate is essential for maintaining user trust and satisfaction. High error rates can indicate underlying issues with the service that need to be addressed.
 
 5. Time to Repair (TTR)  
-This metric indicates the period from receiving an incident message after a failure until the basic functionality is restored. It helps organizations assess how quickly they can recover from disruptions, which is vital for maintaining service availability. A shorter TTR leads to improved user experience as prolonged downtimes can lead to frustration, loss of trust, and ultimately, customer churn. Monitoring TTR helps organizations ensure they are meeting user expectations.
-
+This metric indicates the period from receiving an incident message after a failure until the basic functionality is restored. It helps organizations assess how quickly they can recover from disruptions, which is vital for maintaining service availability. A shorter TTR leads to improved user experience as prolonged downtimes can lead to frustration, loss of trust, and ultimately, customer churn. 
 
 ## Create a Dashboard to measure our SLIs
 *TODO:* Create a dashboard to measure the uptime of the frontend and backend services We will also want to measure 40x and 50x errors. Create a dashboard that shows these values over a 24 hour period and take a screenshot.  
