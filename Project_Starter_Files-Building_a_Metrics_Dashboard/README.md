@@ -34,7 +34,21 @@ Monthly Uptime: This SLI measures the percentage of time that the service is ope
 Request Response Time: This SLI measures the time taken to respond to a user request. It indicates the speed and efficiency of handling requests. For example, if the response time objective is set to 200 milliseconds, the service should respond to user requests within 200 milliseconds on average and the SLI would track the percentage of requests that meet this criterion.
 
 ## Creating SLI metrics.
-*TODO:* It is important to know why we want to measure certain metrics for our customer. Describe in detail 5 metrics to measure these SLIs. 
+*TODO:* It is important to know why we want to measure certain metrics for our customer. Describe in detail 5 metrics to measure these SLIs.   
+1. Monthly Uptime Percentage  
+This metric measures the percentage of time that the service is operational and available to users over a month. High uptime is critical for user satisfaction and trust. Customers expect services to be available consistently, and this metric directly reflects the reliability of the service.
+
+2. Average Request Response Time  
+This metric measures the average time taken for the service to respond to requests over a specified period (e.g., monthly). A low average response time indicates that the service is performing well and providing a good user experience. Customers are likely to abandon services that respond slowly.
+
+3. 95th Percentile Response Time  
+This metric measures the response time below which 95% of the requests fall. It helps to understand the upper limit of response times experienced by most users and highlights the worst-case scenarios. Even if the average response time is acceptable, a high 95th percentile response time can indicate that some users are experiencing significant delays.
+
+4. Error Rate  
+This metric measures the percentage of requests that result in errors (e.g., HTTP 4xx and 5xx status codes) over a specified period. A low error rate is essential for maintaining user trust and satisfaction. High error rates can indicate underlying issues with the service that need to be addressed.
+
+5. Time to Repair (TTR)  
+This metric indicates the period from receiving an incident message until the basic functionality is restored and the customer is informed.
 
 ## Create a Dashboard to measure our SLIs
 *TODO:* Create a dashboard to measure the uptime of the frontend and backend services We will also want to measure 40x and 50x errors. Create a dashboard that shows these values over a 24 hour period and take a screenshot.  
