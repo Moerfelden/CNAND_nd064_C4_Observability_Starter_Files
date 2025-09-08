@@ -27,6 +27,14 @@ The above dashboard is stored in the `dashboards` directory: Basic Dashboard.jso
 
 ## Describe SLO/SLI
 *TODO:* Describe, in your own words, what the SLIs are, based on an SLO of *monthly uptime* and *request response time*.
+Service Level Indicators (SLIs) and Service Level Objectives (SLOs) are essential components used to measure and ensure the quality of service delivery. An SLI is a metric that measures specific attributes of the service such as performance and reliability against defined Service Level Objectives (SLOs). An SLO is the target value that an organization aims to achieve for a given SLI. It defines the acceptable thresholds of these metrics. In the context of SLOs that focus on monthly uptime and request response time, two SLIs that provide insight into how well a service is performing might be:
+
+Monthly Uptime: This SLI measures the percentage of time that the service is operational and accessible to users within a month. For instance, if the agreed uptime is 99.5%, the service should be available and functioning correctly 99.5% of the time within any given month.
+
+Request Response Time: This SLI measures the time taken to respond to a user request. It indicates the speed and efficiency of handling requests. For example, if the response time objective is set to one hour, the service should respond to user requests within one hour on average.
+
+
+
 
 ## Creating SLI metrics.
 *TODO:* It is important to know why we want to measure certain metrics for our customer. Describe in detail 5 metrics to measure these SLIs. 
