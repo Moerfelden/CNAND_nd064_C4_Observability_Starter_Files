@@ -63,6 +63,9 @@ The above dashboard is stored in the `dashboards` directory: Intermediate Dashbo
 *TODO:*  We will create a Jaeger span to measure the processes on the backend. Once you fill in the span, provide a screenshot of it here. Also provide a (screenshot) sample Python file containing a trace and span code used to perform Jaeger traces on the backend service.  
 <img src="./answer-img/Jaeger Trace_Add Star.png"/> 
 <img src="./answer-img/Jaeger Span_Add Star.png"/> 
+<img src="./answer-img/Backend_Trace and Span Code_1.png"/> 
+<img src="./answer-img/Backend_Trace and Span Code_2.png"/> 
+<img src="./answer-img/Backend_Trace and Span Code_3.png"/> 
 
 ## Jaeger in Dashboards
 *TODO:* Now that the trace is running, let's add the metric to our current Grafana dashboard. Once this is completed, provide a screenshot of it here.
