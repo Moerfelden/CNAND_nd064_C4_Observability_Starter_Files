@@ -31,10 +31,7 @@ Service Level Indicators (SLIs) and Service Level Objectives (SLOs) are essentia
 
 Monthly Uptime: This SLI measures the percentage of time that the service is operational and accessible to users within a month. For instance, if the agreed uptime is 99.5%, the service should be available and functioning correctly 99.5% of the time within any given month.
 
-Request Response Time: This SLI measures the time taken to respond to a user request. It indicates the speed and efficiency of handling requests. For example, if the response time objective is set to one hour, the service should respond to user requests within one hour on average.
-
-
-
+Request Response Time: This SLI measures the time taken to respond to a user request. It indicates the speed and efficiency of handling requests. For example, if the response time objective is set to 200 milliseconds, the service should respond to user requests within 200 milliseconds on average and the SLI would track the percentage of requests that meet this criterion.
 
 ## Creating SLI metrics.
 *TODO:* It is important to know why we want to measure certain metrics for our customer. Describe in detail 5 metrics to measure these SLIs. 
