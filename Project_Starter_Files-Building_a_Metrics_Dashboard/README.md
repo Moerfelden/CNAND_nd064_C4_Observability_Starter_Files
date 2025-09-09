@@ -99,7 +99,7 @@ This SLI measures the percentage of time that the application is operational and
 2. Error Rate: 
 This SLI measures the percentage of requests that result in errors (e.g., HTTP 4xx and 5xx status codes) over a specified period.
 
-3. Response Time /Latency: 
+3. Response Time / Latency: 
 This SLI measures the time it takes for the application to respond to user requests. You can track average response time and percentile response times (e.g., 95th percentile).
 
 4. Successful Request Rate: 
@@ -107,6 +107,15 @@ This SLI measures the percentage of successful requests (e.g., HTTP 2xx status c
 
 ## Building KPIs for our plan
 *TODO*: Now that we have our SLIs and SLOs, create a list of 2-3 KPIs to accurately measure these metrics as well as a description of why those KPIs were chosen. We will make a dashboard for this, but first write them down here.
+
+1. Daily Uptime Percentage:
+This KPI measures the overall uptime of the application over a period of 24 hours. It directly correlates with the SLO of 99.95% uptime and helps track whether the application meets its availability goals.
+
+2. Average Error Rate:
+This KPI tracks the average error rate of requests over a specified period. A low error rate indicates that the application is functioning correctly, which is essential for maintaining high availability and user satisfaction.
+
+3. Average Response Time:
+This KPI measures the average time taken to respond to user requests. Monitoring response times helps ensure that the application is not only available but also performing well, contributing to a positive user experience.
 
 ## Final Dashboard
 *TODO*: Create a Dashboard containing graphs that capture all the metrics of your KPIs and adequately representing your SLIs and SLOs. Include a screenshot of the dashboard here, and write a text description of what graphs are represented in the dashboard.  
