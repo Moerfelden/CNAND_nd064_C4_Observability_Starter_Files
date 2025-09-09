@@ -23,7 +23,6 @@ List of service monitors:
 ## Create a Basic Dashboard
 *TODO:* Create a dashboard in Grafana that shows Prometheus as a source. Take a screenshot and include it here.  
 <img src="./answer-img/Successful Requests per Minute.png"/>  
-The above dashboard is stored in the `dashboards` directory: Basic Dashboard.json
 
 ## Describe SLO/SLI
 *TODO:* Describe, in your own words, what the SLIs are, based on an SLO of *monthly uptime* and *request response time*.  
@@ -57,7 +56,6 @@ This metric indicates the period from receiving an incident message after a fail
 <img src="./answer-img/Uptime Backend.png"/>
 <img src="./answer-img/40x Errors.png"/>
 <img src="./answer-img/50x Errors.png"/>  
-The above dashboard is stored in the `dashboards` directory: Intermediate Dashboard.json
 
 ## Tracing our Flask App
 *TODO:*  We will create a Jaeger span to measure the processes on the backend. Once you fill in the span, provide a screenshot of it here. Also provide a (screenshot) sample Python file containing a trace and span code used to perform Jaeger traces on the backend service.  
