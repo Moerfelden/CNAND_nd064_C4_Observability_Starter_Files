@@ -91,7 +91,19 @@ Description: Connection refused error. As shown by the tracer span in the screen
 <img src="./answer-img/Jaeger Trace_Connection Refused.png"/>  
 
 ## Creating SLIs and SLOs
-*TODO:* We want to create an SLO guaranteeing that our application has a 99.95% uptime per month. Name four SLIs that you would use to measure the success of this SLO.
+*TODO:* We want to create an SLO guaranteeing that our application has a 99.95% uptime per month. Name four SLIs that you would use to measure the success of this SLO.  
+
+1. Availability: 
+This SLI measures the percentage of time that the application is operational and accessible to users over a specified period (e.g., one month).
+
+2. Error Rate: 
+This SLI measures the percentage of requests that result in errors (e.g., HTTP 4xx and 5xx status codes) over a specified period.
+
+3. Response Time /Latency: 
+This SLI measures the time it takes for the application to respond to user requests. You can track average response time and percentile response times (e.g., 95th percentile).
+
+4. Successful Request Rate: 
+This SLI measures the percentage of successful requests (e.g., HTTP 2xx status codes) compared to the total number of requests made to the application.
 
 ## Building KPIs for our plan
 *TODO*: Now that we have our SLIs and SLOs, create a list of 2-3 KPIs to accurately measure these metrics as well as a description of why those KPIs were chosen. We will make a dashboard for this, but first write them down here.
