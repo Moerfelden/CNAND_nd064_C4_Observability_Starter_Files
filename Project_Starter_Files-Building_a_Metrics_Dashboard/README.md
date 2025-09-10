@@ -118,3 +118,8 @@ This KPI measures the average time taken to respond to user requests. Monitoring
 
 ## Final Dashboard
 *TODO*: Create a Dashboard containing graphs that capture all the metrics of your KPIs and adequately representing your SLIs and SLOs. Include a screenshot of the dashboard here, and write a text description of what graphs are represented in the dashboard.  
+<img src="./answer-img/Daily Uptime Percentage.png"/>  
+<img src="./answer-img/Average Error Rate Backend Service.png"/>  
+<img src="./answer-img/Average Response Time Backend Service.png"/>  
+<img src="./answer-img/Memory Usage.png"/>  
+<img src="./answer-img/CPU Usage.png"/>
