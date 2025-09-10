@@ -122,4 +122,10 @@ This KPI measures the average time taken to respond to user requests. Monitoring
 <img src="./answer-img/Average Error Rate Backend Service.png"/>  
 <img src="./answer-img/Average Response Time Backend Service.png"/>  
 <img src="./answer-img/Memory Usage.png"/>  
-<img src="./answer-img/CPU Usage.png"/>
+<img src="./answer-img/CPU Usage.png"/>  
+The first graph calculates the average uptime percentage of all backend pods over the last 24 hours.
+The second graph gives the percentage of HTTP requests that resulted in client (4xx) or server (5xx) errors for the backend-service. 
+The third graph represents the average duration of successful HTTP requests to the backend service over the last 5 minutes.
+The fourth graph gives the total working set memory (in bytes) used by all containers in each pod, thus providing insights into the pods' memory consumption.
+The fifth graph calculates the total CPU usage (in seconds) for each pod in the default namespace.
+
