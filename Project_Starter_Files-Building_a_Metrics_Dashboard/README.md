@@ -23,6 +23,7 @@ List of service monitors:
 ## Create a Basic Dashboard
 *TODO:* Create a dashboard in Grafana that shows Prometheus as a source. Take a screenshot and include it here.  
 <img src="./answer-img/Successful Requests per Minute.png"/>  
+<img src="./answer-img/Backend Container Memory Usage.png"/>  
 
 ## Describe SLO/SLI
 *TODO:* Describe, in your own words, what the SLIs are, based on an SLO of *monthly uptime* and *request response time*.  
