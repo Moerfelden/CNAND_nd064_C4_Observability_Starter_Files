@@ -59,15 +59,15 @@ This metric indicates the period from receiving an incident message after a fail
 
 ## Tracing our Flask App
 *TODO:*  We will create a Jaeger span to measure the processes on the backend. Once you fill in the span, provide a screenshot of it here. Also provide a (screenshot) sample Python file containing a trace and span code used to perform Jaeger traces on the backend service.  
-<img src="./answer-img/Jaeger Trace_Add Star.png"/> 
-<img src="./answer-img/Jaeger Span_Add Star.png"/> 
+<img src="./answer-img/Jaeger Trace_backend_star_span.png"/> 
+<img src="./answer-img/Jaeger Span_backend_star_span.png"/> 
 <img src="./answer-img/Backend_Trace and Span Code_1.png"/> 
 <img src="./answer-img/Backend_Trace and Span Code_2.png"/> 
 <img src="./answer-img/Backend_Trace and Span Code_3.png"/> 
 
 ## Jaeger in Dashboards
 *TODO:* Now that the trace is running, let's add the metric to our current Grafana dashboard. Once this is completed, provide a screenshot of it here.
-<img src="./answer-img/Trace ID 43dde01fe5075444 in Grafana.png"/> 
+<img src="./answer-img/Trace ID fdb7d6155e9237be in Grafana.png"/> 
 
 ## Report Error
 *TODO:* Using the template below, write a trouble ticket for the developers, to explain the errors that you are seeing (400, 500, latency) and to let them know the file that is causing the issue also include a screenshot of the tracer span to demonstrate how we can use a tracer to locate errors easily.
